@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CasinoDrill</string>
+    <string name="select_targets">Select targets</string>
+    <string name="circle">Circle</string>
+    <string name="square">Square</string>
+    <string name="triangle">Triangle</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+    <string name="yellow">Yellow</string>
+    <string name="red">Red</string>
+    <string name="white">White</string>
+    <string name="delay">Delay %.1f seconds.</string>
+</resources>

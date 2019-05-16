@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="view_margin">60dp</dimen>
+    <dimen name="bottom_margin">100dp</dimen>
+    <dimen name="view_padding">10dp</dimen>
+</resources>

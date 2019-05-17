@@ -1,5 +1,6 @@
 package in.chojnacki.casinodrill;
 
+import android.content.res.Resources;
 import android.speech.tts.TextToSpeech;
 
 import java.util.*;
@@ -8,12 +9,16 @@ public class Reader implements Runnable {
 
     private final TextToSpeech tts;
     private final Map<Shape, Set<Color>> configuration;
+    private final Resources resources;
+    private final String packageName;
     private Boolean keepReading;
     private int delay = 3000;
 
-    Reader(TextToSpeech tts, Map<Shape, Set<Color>> configuration) {
+    Reader(TextToSpeech tts, Map<Shape, Set<Color>> configuration, Resources resources, String packageName) {
         this.tts = tts;
         this.configuration = configuration;
+        this.resources = resources;
+        this.packageName = packageName;
     }
 
     @Override
@@ -33,13 +38,18 @@ public class Reader implements Runnable {
     private String getTextToRead() {
         List<Shape> shapes = new ArrayList<>(configuration.keySet());
         Collections.shuffle(shapes);
+
         Shape shape = shapes.get(0);
-        String result = shape.name();
+        int shapeStringId = resources.getIdentifier(shape.name().toLowerCase(), "string", packageName);
+        String result = resources.getString(shapeStringId);
+
         ArrayList<Color> colors = new ArrayList<>(configuration.get(shape));
         if (!colors.isEmpty()) {
             Collections.shuffle(colors);
             Color color = colors.get(0);
-            result += " " + color.name();
+
+            int colorStringId = resources.getIdentifier(color.name().toLowerCase(), "string", packageName);
+            result += " " + resources.getString(colorStringId);
         }
         return result;
     }

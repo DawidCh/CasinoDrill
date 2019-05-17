@@ -16,7 +16,6 @@ import java.util.concurrent.ScheduledExecutorService;
 
 import static in.chojnacki.casinodrill.Color.*;
 import static in.chojnacki.casinodrill.Shape.*;
-import static java.util.Locale.UK;
 
 public class MainActivity extends AppCompatActivity implements TextToSpeech.OnInitListener {
 
@@ -34,9 +33,9 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
 
         Arrays.stream(Shape.values()).forEach(shape -> elements.put(shape, new HashSet<Color>()));
         TextToSpeech tts = new TextToSpeech(this, this);
-        tts.setLanguage(UK);
+        tts.setLanguage(getResources().getConfiguration().getLocales().get(0));
 
-        this.reader = new Reader(tts, elements);
+        this.reader = new Reader(tts, elements, getResources(), getPackageName());
 
         FloatingActionButton start = findViewById(R.id.start);
         start.setOnClickListener(view -> executor.submit(reader));

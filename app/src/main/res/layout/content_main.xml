@@ -1,142 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                             android:orientation="vertical"
-                             android:layout_width="fill_parent"
-                             android:layout_height="fill_parent"
-                             android:layout_marginTop="@dimen/view_margin"
-                             android:paddingLeft="@dimen/view_padding">
-    <SeekBar
-            android:id="@+id/delayBar"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="26dp"
-            android:max="110"
-            android:min="10"/>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
 
-    <TextView
-            android:id="@+id/delayValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+    <android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                 android:orientation="vertical"
+                                 android:layout_width="fill_parent"
+                                 android:layout_height="fill_parent"
+                                 android:layout_marginTop="@dimen/view_margin"
+                                 android:paddingLeft="@dimen/view_padding">
 
-    <TextView android:id="@+id/checkbox_circle"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/circle"/>
+        <SeekBar
+                android:id="@+id/delayBar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                android:max="110"
+                android:min="10"/>
 
-    <CheckBox android:id="@+id/checkbox_cirle_blue"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/blue"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <TextView
+                android:id="@+id/delayValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-    <CheckBox android:id="@+id/checkbox_cirle_green"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/green"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <TextView
+                android:id="@+id/checkbox_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/circle"/>
 
-    <CheckBox android:id="@+id/checkbox_cirle_yellow"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/yellow"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_cirle_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_cirle_red"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/red"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_cirle_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_cirle_white"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/white"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_cirle_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yellow"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <TextView android:id="@+id/square"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/square"/>
+        <CheckBox
+                android:id="@+id/checkbox_cirle_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_square_blue"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/blue"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_cirle_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/white"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_square_green"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/green"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <TextView
+                android:id="@+id/square"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/square"/>
 
-    <CheckBox android:id="@+id/checkbox_square_yellow"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/yellow"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_square_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_square_red"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/red"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_square_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_square_white"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/white"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_square_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yellow"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <TextView android:id="@+id/triangle"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/triangle"/>
+        <CheckBox
+                android:id="@+id/checkbox_square_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_triangle_blue"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/blue"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_square_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/white"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_triangle_green"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/green"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <TextView
+                android:id="@+id/triangle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/triangle"/>
 
-    <CheckBox android:id="@+id/checkbox_triangle_yellow"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/yellow"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_triangle_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/blue"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_triangle_red"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/red"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_triangle_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/green"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-    <CheckBox android:id="@+id/checkbox_triangle_white"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/white"
-              android:onClick="onCheckboxClicked"
-              android:layout_marginLeft="@dimen/view_padding"/>
+        <CheckBox
+                android:id="@+id/checkbox_triangle_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yellow"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
+        <CheckBox
+                android:id="@+id/checkbox_triangle_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/red"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
 
-</android.widget.LinearLayout>
+        <CheckBox
+                android:id="@+id/checkbox_triangle_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/white"
+                android:onClick="onCheckboxClicked"
+                android:layout_marginLeft="@dimen/view_padding"/>
+
+    </android.widget.LinearLayout>
+</ScrollView>

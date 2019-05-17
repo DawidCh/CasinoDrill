@@ -1,13 +1,24 @@
 <resources>
     <string name="app_name">CasinoDrill</string>
-    <string name="select_targets">Select targets</string>
-    <string name="circle">Circle</string>
-    <string name="square">Square</string>
-    <string name="triangle">Triangle</string>
-    <string name="blue">Blue</string>
-    <string name="green">Green</string>
-    <string name="yellow">Yellow</string>
-    <string name="red">Red</string>
-    <string name="white">White</string>
-    <string name="delay">Delay %.1f seconds.</string>
+    <string name="select_targets">Wybierz cele</string>
+    <string name="circle">Koło</string>
+    <string name="square">Kwadrat</string>
+    <string name="triangle">Trójkąt</string>
+    <string name="blue">Niebieski</string>
+    <string name="green">Zielony</string>
+    <string name="yellow">Żółty</string>
+    <string name="red">Czerwony</string>
+    <string name="white">Biały</string>
+    <string name="delay">Odpoczynek %.1f sekund.</string>
+    <string name="one">jeden</string>
+    <string name="two">dwa</string>
+    <string name="three">trzy</string>
+    <string name="four">cztery</string>
+    <string name="five">pięć</string>
+    <string name="six">sześć</string>
+    <string name="seven">siedem</string>
+    <string name="eight">osiem</string>
+    <string name="nine">dziewięć</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
 </resources>
